@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-blue: #419BEE;
+  --linear-primary-blue: linear-gradient(#72EDF2, #5151E5);
+  --linear-primary-blue-diagonal: linear-gradient(135deg, #72EDF2, #130CB7);
+  --header-color: #ECF7F7;
+  --default-box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #72EDF2;
+  border-radius: 5px;
+}

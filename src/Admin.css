@@ -1,0 +1,324 @@
+.adminContainer {
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+    height: 95%;
+}
+
+.dashboardLeft {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.dashboardStatCell {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 130px;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    justify-content: space-between;
+}
+
+.dashboardStatCell h3 {
+    background-image: var(--linear-primary-blue-diagonal);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 1px rgb(0, 0, 0, 0.6);
+}
+
+.dashboardStatCell span {
+    font-size: x-large;
+    font-weight: 600;
+    
+}
+
+.dashboardRight {
+    width: 100%;
+    padding: 20px;
+    margin-left: 2rem;
+}
+
+.dashboardRight table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.dashboardRight table * {
+    padding: 5px;
+}
+
+.dashboardRight table th {
+    background: var(--primary-blue);
+}
+
+.dashboardRight table td {
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0, 0.6);
+}
+
+.dashboardRight table tr {
+    background: white;
+}
+
+.dashboardRight table tr:nth-child(even){
+    background: #70E1F5;
+}
+
+.notifContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    height: 460px;
+    border-radius: 15px;
+    background: linear-gradient(#f74545 40%, rgb(0,0,0,0));
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifContainer h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0px 2px 4px black;
+}
+
+.statButtons {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+}
+
+.statButtons button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 140px;
+    margin: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--primary-blue);
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    background: white;
+    margin: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.profileHeader {
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.profileHeader h1 {
+    text-align: center;
+}
+
+.profileBody {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    align-items: center;
+}
+
+.profileCell {
+    display: flex;
+    padding: 20px;
+    background: var(--linear-primary-blue-diagonal);
+    width: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: var(--default-box-shadow);
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.profileCell input {
+    font-weight: 600;
+    color: white;
+    font-size: large;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.profileCell svg {
+    width: 25px;
+    height: 25px;
+}
+
+.profileCell svg path {
+    fill: white;
+}
+
+.profileContainer button {
+    padding: 10px 20px;
+    width: 50%;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+    background: grey;
+}
+
+.profileIcon {
+    position: absolute;
+    right: 4%;
+    border-radius: 50%;
+    background: #1A4660;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin: 5px 0;
+}
+
+.profileIcon svg {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+}
+
+.profileIcon svg path {
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+#reveal {
+    cursor: pointer;
+}
+
+.reportsContainer {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    padding: 20px;
+}
+
+.reportLeft {
+    width: 40%;
+    padding: 20px;
+}
+
+.clockView {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    background: black;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reportRight {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reportRight table {
+    background: white;
+}
+
+.reportRight h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reportRight table tbody tr td {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.overdue {
+    background: #FFBE83;
+}
+.paid {
+    background: #9F1B1B;
+}
+.pending {
+    background: #0DBD09;
+}
+
+.billContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 40px auto;
+    position: relative;
+}
+
+.billContainer table {
+    background: white;
+}
+
+.billContainer thead th {
+    padding: 15px 20px;
+    background: #419BEE;
+}
+
+.billContainer tbody td {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.billContainer tbody:nth-child(odd) {
+    background: #419BEE;
+}
+
+.billSearchContainer {
+    border-top: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    background: white;
+    border-radius: 15px;
+}
+
+.billContainer input {
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.billContainer button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+}

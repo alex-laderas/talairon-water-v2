@@ -1,0 +1,469 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--header-color);
+}
+
+.headerTitle {
+    margin: 0 auto;
+    justify-content: center;
+   display: flex;
+}
+
+.headerTitle h1 {
+    margin: auto 0;
+    color: #36383A;
+}
+
+.navLogo {
+    margin-top: 20px;
+}
+
+.nav {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--primary-blue);
+    height: 100%;
+    width: 140px;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: var(--default-box-shadow);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.nav a span{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: red;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+    overflow: auto;
+}
+
+.nav ul a li {
+    display: flex;
+    position: relative;
+    margin: 20px 10px;
+    background: var(--linear-primary-blue);
+    min-height: 4rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+
+.nav ul a li svg {
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+
+.nav ul a li span {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: x-small;
+    color: white;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.nav ul li:hover span {
+    display: flex;
+    transition: 0.6s ease-in;
+    opacity: 1;
+}
+
+.nav ul li:hover svg {
+    transform: scale(0.8) translateY(-6px);
+    transition: 0.3s ease-in-out;
+}
+
+.nav ul li:hover svg path {
+    fill: white;
+    transition: 0.3s ease-in-out;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    background: var(--linear-primary-blue-diagonal);
+    padding-top: 70px;
+    padding-left: 140px;
+    display: flex;
+}
+
+.billingContainer {
+    width: 40%;
+    min-width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    align-self: center;
+}
+
+.billingHeader {
+    display: flex;
+    border-bottom: 2px solid black;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.billCell {
+    margin: 20px auto;
+    display: flex;
+    background: var(--linear-primary-blue-diagonal);
+    border-radius: 15px;
+    box-shadow: var(--default-box-shadow);
+    padding: 20px;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.billCell h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.billCell span {
+    font-size: xx-large;
+    margin-right: 20px;
+    color: white;
+}
+
+.billingContainer a {
+    margin: 0 auto;
+}
+
+.billingContainer button {
+    width: 30%;
+    min-width: 350px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background: rgba(0, 0, 0, .46);
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    color: white;
+}
+
+.billingContainer button:active {
+    transform: scale(0.97);
+}
+
+.userProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 550px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.userProfileContainer span {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.userProfileHeader {
+    border-bottom: 2px solid black;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.userProfileHeader h2 {
+    font-size: xx-large;
+}
+
+.userProfileBody {
+    text-align: center;
+}
+
+.userProfileBody h3 {
+    font-weight: 400;
+    font-size: x-large;
+    color: #474040;
+}
+
+.userProfileBody span {
+    font-size: small;
+    color: #585555;
+}
+
+.userProfileFooter {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    height: 40px;
+    background: #99CBE8;
+    margin: 20px -20px -20px -20px;
+    min-width: 550px;
+    width: 110%;
+}
+
+.userProfileFooter input {
+    background: none;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-weight: 600;
+}
+
+.userProfileFooter svg {
+    width: 25px;
+    height: 25px;
+}
+
+.userProfileIcon {
+    display: flex;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.userProfileIcon svg {
+    margin: auto;
+    height: 50%;
+    width: 50%;
+}
+
+.userProfileFootCell {
+    display: flex;
+    align-items: center;
+}
+
+.userDashboardContainer {
+    display: flex;
+    margin: 20px auto;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.userDashboardContainer img {
+    width: 350px;
+    height: 350px;
+}
+
+.userDashboardLeft {
+    padding: 20px;
+    width: 400px;
+    color: white;
+}
+
+.userDashboardRight {
+    width: 800px;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.userDashboardRightHead {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    height: 320px;
+}
+
+.userDashboardRightHead img {
+    height: 150px;
+    width: 16rem;
+}
+
+.userDashboardRightBody {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+.userDashboardRightBody article {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.userDashboardRightBody article > * {
+    color: white;
+}
+
+.aboutContainer {
+    display: flex;
+    width: 70%;
+    background: white;
+    margin: 20px auto;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutFooter {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: #99CBE8;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    align-items: center;
+}
+
+.aboutMain h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.aboutMain h2 {
+    text-decoration: underline;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.aboutMain span {
+    color: #605D5D;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contactItem img {
+    height: 60px;
+    width: 60px;
+}
+
+.contactItem span {
+    font-size: large;
+    font-weight: 600;
+    color: var(--primary-blue);
+    transform: translateY(-30px);
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.contactItem:hover span {
+    transform: translateY(0);
+    z-index: 0;
+    transition: ease-in-out 0.2s;
+    opacity: 1;
+}
+
+.appointmentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.dateSelect {
+    margin: 20px;
+}
+
+.dateSelect input {
+    font-size: x-large;
+    margin: 20px;
+}
+
+.appointmentContainer button {
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, .46);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dateView {
+    display: flex;
+    background: #99CBE8;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: xx-large;
+    font-style: italic;
+    height: 140px;
+    align-items: center;
+}
+
+.billView table {
+    border-spacing: 0;
+    background: white;
+}
+
+.billView thead {
+    background: #70E1F5;
+    
+}
+
+.billView thead tr th {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-top: 0;
+    font-weight: 100;
+}
+
+.billView thead tr th:first-child {
+    border-left: 0;
+}
+
+.billView thead tr th:last-child {
+    border-right: 0;
+}
+
+.billView td {
+    text-align: center;
+    padding: 20px 15px;
+    font-weight: 600;
+}
