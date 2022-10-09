@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.f01e06c3.css",
-    "main.js": "/static/js/main.f984598a.js",
-    "static/media/talairon2.jpg": "/static/media/talairon2.d8f697bd8ce3f3a83387.jpg",
-    "static/media/talairon3.jpg": "/static/media/talairon3.47b830a4b17c25c58af3.jpg",
-    "static/media/talairon1.png": "/static/media/talairon1.255f5dfb3301662c6815.png",
-    "static/media/talairon4.jpg": "/static/media/talairon4.9da27bb0347aaf767a02.jpg",
-    "static/media/navLogo.png": "/static/media/navLogo.acd40f257cf2c294f525.png",
-    "static/media/bg.jpg": "/static/media/bg.92e81c071a354ea82b83.jpg",
-    "static/media/talairon-map.png": "/static/media/talairon-map.62cc024fbfe45e35625b.png",
-    "index.html": "/index.html",
-    "main.f01e06c3.css.map": "/static/css/main.f01e06c3.css.map",
-    "main.f984598a.js.map": "/static/js/main.f984598a.js.map"
+    "main.css": "/alex-laderas.github.io/talairon-water-v2/static/css/main.643341a3.css",
+    "main.js": "/alex-laderas.github.io/talairon-water-v2/static/js/main.24519e9b.js",
+    "static/media/talairon2.jpg": "/alex-laderas.github.io/talairon-water-v2/static/media/talairon2.d8f697bd8ce3f3a83387.jpg",
+    "static/media/talairon3.jpg": "/alex-laderas.github.io/talairon-water-v2/static/media/talairon3.47b830a4b17c25c58af3.jpg",
+    "static/media/talairon1.png": "/alex-laderas.github.io/talairon-water-v2/static/media/talairon1.255f5dfb3301662c6815.png",
+    "static/media/talairon4.jpg": "/alex-laderas.github.io/talairon-water-v2/static/media/talairon4.9da27bb0347aaf767a02.jpg",
+    "static/media/navLogo.png": "/alex-laderas.github.io/talairon-water-v2/static/media/navLogo.acd40f257cf2c294f525.png",
+    "static/media/bg.jpg": "/alex-laderas.github.io/talairon-water-v2/static/media/bg.92e81c071a354ea82b83.jpg",
+    "static/media/talairon-map.png": "/alex-laderas.github.io/talairon-water-v2/static/media/talairon-map.62cc024fbfe45e35625b.png",
+    "index.html": "/alex-laderas.github.io/talairon-water-v2/index.html",
+    "main.643341a3.css.map": "/alex-laderas.github.io/talairon-water-v2/static/css/main.643341a3.css.map",
+    "main.24519e9b.js.map": "/alex-laderas.github.io/talairon-water-v2/static/js/main.24519e9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f01e06c3.css",
-    "static/js/main.f984598a.js"
+    "static/css/main.643341a3.css",
+    "static/js/main.24519e9b.js"
   ]
 }
