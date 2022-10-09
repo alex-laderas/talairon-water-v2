@@ -10,7 +10,7 @@ function App() {
   return (
       <div className="main">
         <Routes>
-          <Route exact path='/' element={<Login/>}/>
+          <Route exact path='alex-laderas.github.io/talairon-water-v2/' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
           <Route exact path='/user/*' element={<User />}/>
           <Route exact path='/admin/*' element={<Admin/>}/>
