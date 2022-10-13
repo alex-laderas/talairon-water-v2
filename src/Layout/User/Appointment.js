@@ -25,16 +25,16 @@ function Appointment() {
     }
 
     return (
+        <>
+        
         <div className="appointmentContainer">
             <form className="dateSelect" onSubmit={handleDate}>
                 <input type="date" name="" id="" onChange={e => setDate(new Date(e.target.value))} required/>
                 <input type="time" name="" id="" onChange={e => setTime(e.target.value)} required/>
                 <button type="submit">Set</button>
             </form>
-            <div className="dateView">
-                <p>Appointment set on {viewDate || "(Select Date)"} at { viewTime || "(Select Time)" }</p>
-            </div>
-            <div className="billView">
+            <div className="billBottom">
+        <div className="billView">
                 <table>
                     <thead>
                         <tr>
@@ -52,7 +52,13 @@ function Appointment() {
                     </tbody>
                 </table>
             </div>
+            <div className="dateView">
+                <p>Appointment set on {viewDate || "(Select Date)"} at { viewTime || "(Select Time)" }</p>
+            </div>
         </div>
+
+            </div>
+        </>
     )
 }
 

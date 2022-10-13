@@ -1,4 +1,5 @@
 import { useState } from "react";
+import statCell from '../../statCell.png'
 
 function Admins() {
 
@@ -10,53 +11,49 @@ function Admins() {
         <div className="adminContainer">
             
 
-            <div className="dashboardLeft">
                 <h2>Dashboard</h2>
+            <div className="dashboardLeft">
                 <div className="dashboardStatCell">
-                    <h3>Customers Paid Today</h3>
+                    <div className="statCellHead">
+                        <img src={statCell} alt="" srcset="" />
+                        <h3>Customers Paid Today</h3>
+                    </div>
                     <span>{ paid }</span>
                 </div>
                 <div className="dashboardStatCell">
-                    <h3>Customers with Penalties</h3>
+                    <div className="statCellHead">
+                        <img src={statCell} alt="" srcset="" />
+                        <h3>Customers with Penalties</h3>
+                    </div>
                     <span>{ penalties }</span>
                 </div>
                 <div className="dashboardStatCell">
-                    <h3>Customers with Overdue Balance</h3>
+                    <div className="statCellHead">
+                        <img src={statCell} alt="" srcset="" />
+                        <h3>Customers with Overdue Balance</h3>
+                    </div>
                     <span>{ overdue }</span>
                 </div>
             </div>
-            <div className="dashboardRight">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>User Code</th>
-                            <th>Email</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Leah Glenn</td>
-                            <td>94D434</td>
-                            <td>leahglenn@gmail.com</td>
-                            <td>Paid</td>
-                        </tr>
-                        <tr>
-                            <td>Leah Glenn</td>
-                            <td>94D434</td>
-                            <td>leahglenn@gmail.com</td>
-                            <td>Paid</td>
-                        </tr>
-                        <tr>
-                            <td>Leah Glenn</td>
-                            <td>94D434</td>
-                            <td>leahglenn@gmail.com</td>
-                            <td>Paid</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Purok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0002</td>
+                        <td>Marinelle Penote</td>
+                        <td>0912345678</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     )
 }

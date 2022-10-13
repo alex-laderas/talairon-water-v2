@@ -4,14 +4,16 @@ import Billing from "../Layout/User/Billing";
 import Profile from "../Layout/User/Profile"
 import Logo from '../images/navLogo.png'
 import Appointment from "../Layout/User/Appointment";
-import '../user.css'
 import About from "../Layout/About";
+import '../user.css'
+import brgyLogo from '../brgyLogo.png';
 
 function User() {
     return (
         <>
             <div className="header">
                 <div className="headerTitle">
+                    <img src={brgyLogo} alt="barangay logo" />
                     <h1>TALAIRON WATER BILLING SYSTEM</h1>
                     <Link to={'/user/profile'}>
                         <div className="profileIcon">
@@ -70,7 +72,7 @@ function User() {
                     <Route path='/billing' element={<Billing/>}/>
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/about' element={<About/>}/>
-                    <Route path='/appointment' element={<Appointment/>}/>
+                    <Route path='/appointment' element={<Appointment/>}/>                    
                 </Routes>
             </div>
         </>

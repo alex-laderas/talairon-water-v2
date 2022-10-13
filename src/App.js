@@ -5,6 +5,7 @@ import Admin from './pages/admin'
 import { Route, Routes } from "react-router"
 import './App.css';
 
+
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -33,8 +34,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
-          <Route exact path='/user' element={<User />}/>
-          <Route exact path='/admin' element={<Admin/>}/>
+          <Route exact path='/user/*' element={<User />}/>
+          <Route exact path='/admin/*' element={<Admin/>}/>
         </Routes>
       </div>
     
