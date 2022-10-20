@@ -34,8 +34,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
-          <Route exact path='/user' element={<User />}/>
-          <Route exact path='/admin' element={<Admin/>}/>
+          <Route exact path='/user/*' element={<User />}/>
+          <Route exact path='/admin/*' element={<Admin/>}/>
         </Routes>
       </div>
     
