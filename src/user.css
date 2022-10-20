@@ -57,6 +57,10 @@
     color: red;
 }
 
+.logOut {
+    left: 30%
+}
+
 .nav ul {
     list-style-type: none;
     margin: 20px 0;
@@ -116,6 +120,7 @@
     background: var(--linear-primary-blue-diagonal);
     padding-top: 70px;
     padding-left: 140px;
+    overflow: auto;
     display: flex;
 }
 
@@ -331,8 +336,9 @@
 }
 
 .userDashboardRightHead img {
-    height: 150px;
-    width: 16rem;
+    max-height: 150px;
+    max-width: 16rem;
+    aspect-ratio: 16 / 9;
 }
 
 .userDashboardRightBody {

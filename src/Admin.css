@@ -6,9 +6,24 @@
     height: 95%;
 }
 
+.dashHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashHead button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
 .adminContainer table {
     background: white;
-    margin: 20px auto;
+    margin: 0 auto 0 16px;
+    width: 100%;
 }
 
 .adminContainer thead th{
@@ -19,29 +34,47 @@
 .adminContainer tbody td {
     text-align: center;
     padding: 15px 20px;
+    height: 12px;
+}
+
+.adminContainer tbody tr {
+    height: 12px;
+}
+
+.adminDashboard {
+    display: flex;
+    justify-content: space-between;
 }
 
 .dashboardLeft {
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    overflow: auto;
-    overflow-x: hidden;
     background: white;
     border-radius: 15px;
-    height: 260px;
 }
 
 .dashboardStatCell {
     display: flex;
     flex-direction: column;
     width: 240px;
-    height: 130px;
     border-radius: 15px;
-    margin: 20px 40px;
+    margin: 6px 0px;
     padding: 20px;
     text-align: center;
     background: white;
     justify-content: space-between;
+}
+
+.dashboardStatCell:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.statPaid:active .adminContainer table th {
+    background: #74adb7;
 }
 
 .dashboardLeft .dashboardStatCell:nth-child(1) {
@@ -57,6 +90,7 @@
 .statCellHead {
     display: flex;
     justify-content: space-between;
+    text-align: right;
 }
 
 .statCellHead img {
@@ -220,6 +254,7 @@
 
 .profileIcon {
     position: absolute;
+    top: 6px;
     right: 4%;
     border-radius: 50%;
     background: #1A4660;
@@ -321,7 +356,45 @@
 
 .billContainer tbody td {
     text-align: center;
-    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.billContainer tbody td button {
+    margin: 0 6px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.billContainer tbody td button:hover span{
+    opacity: 1;
+    transition: ease-in 0.2s;
+    transform: translateY(-2px);
+}
+
+.billContainer tbody td button:hover svg {
+    transform: translate(0);
+    transition: ease-in 0.2s;
+}
+
+.billContainer tbody td button span {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 29.4%;
+    text-align: center;
+    margin-top: 4px;
+    transform: translateY(-6px);
+}
+
+.billContainer tbody td button svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(6px);
+}
+
+.billContainer tbody td button svg path {
+    fill: white;
 }
 
 .billContainer tbody:nth-child(odd) {
@@ -460,4 +533,94 @@
     font-weight: 600;
     color: white;
 
+}
+
+.manageContainer {
+    display: flex;
+    margin: 24px auto;
+}
+
+.manageContainer table {
+    background: white;
+    margin: auto;
+}
+
+.manageContainer table thead th {
+    background: #419BEE;
+    padding: 12px 24px;
+}
+
+.manageContainer table tbody td {
+    padding: 12px 24px;
+}
+
+.manageCard {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px;
+    background: white;
+    border-radius: 15px;
+    padding: 12px;
+    min-width: 320px;
+    position: relative;
+}
+
+.manageCard ul {
+    list-style: none;
+}
+
+.manageCardHead {
+    text-align: center;
+    padding: 4px;
+}
+
+.manageCardHead span {
+    font-size: small;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+.manageCardBody {
+    padding: 4px;
+}
+
+.manageCardBody tbody td {
+    font-weight: 600;
+    font-size: small;
+}
+
+.manageCardBody tbody tr :first-child{
+    color: darkslategray;
+}
+
+.manageCardFoot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.manageCardFoot button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin: 6px;
+    padding: 12px;
+    border-radius: 10px;
+    float: right;
+}
+
+.manageCardFoot button:hover {
+    background: #92d8e4;
+    transition: ease-in 180ms;
+}
+
+.delete {
+    color: red !important;
+}
+
+.delete:hover {
+    background: #e78484 !important;
 }

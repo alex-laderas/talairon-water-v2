@@ -1,0 +1,5 @@
+14:32:27.272 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+14:32:27.577 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+14:33:01.104 [NamespaceSystem-akka.actor.default-dispatcher-8] INFO com.firebase.core.namespace.NamespaceActor - talairon-water-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 273ms, init: 0ms
+14:33:01.254 [NamespaceSystem-blocking-namespace-operation-dispatcher-10:talairon-water-default-rtdb$-163458381:] INFO com.firebase.core.namespace.StateManager - Namespace talairon-water-default-rtdb status Active to Active
+14:39:48.278 [NamespaceSystem-akka.actor.default-dispatcher-13] INFO com.firebase.core.namespace.NamespaceActor - talairon-water successfully activated FBKV (SurveyIdle(0)) wait: 36ms, init: 0ms

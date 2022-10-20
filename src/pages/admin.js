@@ -4,10 +4,11 @@ import Billing from '../Layout/Admin/Billing';
 import Notification from '../Layout/Admin/Notifications';
 import Profile from "../Layout/Admin/Profile";
 import Logo from '../images/navLogo.png';
-import '../Admin.css'
-import Report from "../Layout/Admin/Report";
+import '../Admin.css';
 import Approval from "../Layout/Admin/Approval";
 import BillDetails from "../Layout/Admin/BillDetails";
+import Manage from "../Layout/Admin/Manage";
+import brgyLogo from '../brgyLogo.png'
 
 function Admin() {
     return (
@@ -26,7 +27,7 @@ function Admin() {
             </div>
             <div className="nav">
                 <div className="navLogo">
-                    <img src={ Logo } title="logo"  width={ 100 } height={ 100 } alt=''/>
+                    <img src={ brgyLogo } title="logo"  width={ 100 } height={ 100 } alt=''/>
                 </div>
                 <ul>
                     <Link to='/admin'>
@@ -55,12 +56,12 @@ function Admin() {
                         <span>Billing</span>
                     </li>
                     </Link>
-                    <Link to={'/admin/report'}>
+                    <Link to={'/admin/approval'}>
                         <li>
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M41.6668 16.6667L29.1668 4.16667H12.5002C11.3951 4.16667 10.3353 4.60566 9.55388 5.38706C8.77248 6.16846 8.3335 7.22827 8.3335 8.33334V41.6667C8.3335 42.7717 8.77248 43.8315 9.55388 44.6129C10.3353 45.3943 11.3951 45.8333 12.5002 45.8333H37.5002C38.6052 45.8333 39.665 45.3943 40.4464 44.6129C41.2278 43.8315 41.6668 42.7717 41.6668 41.6667V16.6667ZM18.7502 39.5833H14.5835V20.8333H18.7502V39.5833ZM27.0835 39.5833H22.9168V27.0833H27.0835V39.5833ZM35.4168 39.5833H31.2502V33.3333H35.4168V39.5833ZM29.1668 18.75H27.0835V8.33334L37.5002 18.75H29.1668Z" fill="black"/>
                             </svg>
-                            <span>Reports</span>
+                            <span>Approval</span>
                         </li>
                     </Link>
                     <Link to={'/admin/notifications'}>
@@ -73,17 +74,17 @@ function Admin() {
                     </Link>
                     
                 </ul>
-                <Link to={'/'}> <span>Logout.</span> </Link>
+                <Link to={'/'}> <span className="logOut">Logout.</span> </Link>
             </div>
             <div className="mainContainer">
                 <Routes>
                     <Route path='/' element={<Admins />}/>
                     <Route exact path='/billing' element={<Billing />}/>
-                    <Route exact path='/report' element={<Report />}/>
                     <Route exact path='/notifications' element={<Notification />}/>
                     <Route exact path="/profile" element={<Profile />}/>
                     <Route exact path='/approval' element={<Approval/>}/>
                     <Route exact path='/bill-details' element={<BillDetails/>}/>
+                    <Route exact path='/manage' element={<Manage />}/>
                 </Routes>
             </div>
         </>

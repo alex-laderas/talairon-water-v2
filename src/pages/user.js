@@ -13,7 +13,6 @@ function User() {
         <>
             <div className="header">
                 <div className="headerTitle">
-                    <img src={brgyLogo} alt="barangay logo" />
                     <h1>TALAIRON WATER BILLING SYSTEM</h1>
                     <Link to={'/user/profile'}>
                         <div className="profileIcon">
@@ -26,7 +25,7 @@ function User() {
             </div>
             <div className="nav">
                 <div className="navLogo">
-                    <img src={ Logo } title="logo"  width={ 100 } height={ 100 } alt=''/>
+                    <img src={ brgyLogo } title="logo"  width={ 100 } height={ 100 } alt=''/>
                 </div>
                 <ul>
                     <Link to={'/user'}>
@@ -64,7 +63,7 @@ function User() {
                     </li>
                     </Link>
                 </ul>
-                <Link to={'/'}><span>Logout.</span></Link>
+                <Link to={'/'}><span className="logOut">Logout.</span></Link>
             </div>
             <div className="mainContainer">
                 <Routes>
