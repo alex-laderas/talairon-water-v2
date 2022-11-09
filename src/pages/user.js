@@ -5,7 +5,8 @@ import Profile from "../Layout/User/Profile"
 import Logo from '../images/navLogo.png'
 import Appointment from "../Layout/User/Appointment";
 import About from "../Layout/About";
-import '../user.css'
+import '../user.css';
+import Notifications from "../Layout/User/Notifications";
 import brgyLogo from '../brgyLogo.png';
 
 function User() {
@@ -71,7 +72,8 @@ function User() {
                     <Route path='/billing' element={<Billing/>}/>
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/about' element={<About/>}/>
-                    <Route path='/appointment' element={<Appointment/>}/>                    
+                    <Route path='/appointment' element={<Appointment/>}/>
+                    <Route path='/notifications' element={<Notifications/>}/>                  
                 </Routes>
             </div>
         </>

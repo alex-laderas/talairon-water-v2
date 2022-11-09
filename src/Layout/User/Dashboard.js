@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import map from '../../talairon-map.png'
 import t1 from '../../talairon1.png'
 import t2 from '../../talairon2.jpg'
@@ -8,10 +8,23 @@ import t4 from '../../talairon4.jpg'
 function Dashboard() {
 
     const [consumers, setConsumers] = useState(0);
+    const [test, setTest] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch('users')
+            const newData = await response.text()
+            setTest(newData)
+            console.log(newData)
+          };
+        
+          fetchData();
+    },[])
 
     return (
         <div className="userDashboardContainer">
             <div className="userDashboardLeft">
+                <p> {test}</p>
                 <img src={ map } alt="talairon" />
                 <h2>Population of Talairon as of 2022 census: 4,566.</h2>
                 <h3>Water consumers: { consumers } </h3>
