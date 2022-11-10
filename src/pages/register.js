@@ -53,7 +53,10 @@ function Register() {
             <Link to={'/'}> <button>Login</button> </Link>
           </form>
 
-          
+          <div className="agreements">
+            <Link to={'/agreements/dataprivacy'}><span>Data Privacy Policy</span></Link>
+            <Link to={'/agreements/terms'}><span>Terms and Conditions</span></Link>
+          </div>
         </div>
     )
 }

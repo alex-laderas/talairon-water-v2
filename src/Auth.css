@@ -3,3 +3,67 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.agreements {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+}
+
+.agreementMainContainer {
+    display: flex;
+    background: white;
+    height: 100vh;
+}
+
+.agreementLeft {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    height: 100%;
+    border-right: 0.5px solid grey;
+}
+
+.agreementLeft ul{
+    padding: 6px;
+    font-weight: 600;
+}
+
+.agreementLeft ul li {
+    margin: 12px 0px;
+    list-style-type: none;
+    padding: 8px;
+    border-radius: 4px;
+    color: black;
+}
+
+.agreementLeft ul li:hover {
+    background: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.agreementLeft button {
+    margin: 6px;
+    padding: 4px 8px;
+}
+
+.agreementRight {
+    overflow: auto;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.agreementRight h2 {
+    font-size: large;
+}
+
+.agreementRight > * {
+    line-height: 1.8rem;
+}
+
+.agreementRight > ul > li,
+.agreementRight > ol > li {
+    margin: 20px 0;
+}

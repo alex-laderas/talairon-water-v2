@@ -8,6 +8,7 @@ import './App.css';
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import Agreement from './pages/agreement';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -36,6 +37,7 @@ function App() {
           <Route exact path='/register' element={<Register/>}/>
           <Route exact path='/user/*' element={<User />}/>
           <Route exact path='/admin/*' element={<Admin/>}/>
+          <Route exact path='/agreements/*' element={<Agreement/>}/>
         </Routes>
       </div>
     

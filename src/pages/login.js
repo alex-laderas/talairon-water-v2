@@ -28,7 +28,10 @@ function Login() {
             <Link to={'/user'}> <button>Enter</button> </Link> 
             <Link to={'/register'}> <button>Register</button> </Link>
           </form>
-
+          <div className="agreements">
+            <Link to={'/agreements/dataprivacy'}><span>Data Privacy Policy</span></Link>
+            <Link to={'/agreements/terms'}><span>Terms and Conditions</span></Link>
+          </div>
         </div>
     )
 }
