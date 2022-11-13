@@ -9,6 +9,7 @@ import Approval from "../Layout/Admin/Approval";
 import BillDetails from "../Layout/Admin/BillDetails";
 import Manage from "../Layout/Admin/Manage";
 import brgyLogo from '../brgyLogo.png'
+import Receipt from "../Layout/Admin/Receipt";
 
 function Admin() {
     return (
@@ -85,6 +86,7 @@ function Admin() {
                     <Route exact path='/approval' element={<Approval/>}/>
                     <Route exact path='/bill-details' element={<BillDetails/>}/>
                     <Route exact path='/manage' element={<Manage />}/>
+                    <Route exact path='/receipt' element={<Receipt/>}/>
                 </Routes>
             </div>
         </>

@@ -80,3 +80,124 @@
   background: grey;
   width: 200px;
 }
+
+.landingMain {
+  color: white;
+  margin: 0 4rem;
+  overflow: auto;
+}
+
+.landingHead,
+.landingBody {
+  background: rgba(0, 0, 0, 0.8);
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.landingBody {
+  align-items: center;
+}
+
+.landingBodyImages {
+  justify-content: space-around;
+}
+
+.landingBody img {
+  width: 43%;
+  image-resolution: 16/9;
+  margin: 2rem;
+}
+
+.landingAuth {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.landingAuth button{
+  margin: 0 1rem;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.landingHeadTitle {
+  display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+  align-items: center;
+}
+
+.landingHeadTitle h1 {
+  padding: 2rem;
+  background: rgba(45, 45, 166, 0.4);
+}
+
+.receiptMain {
+  margin: 2rem;
+  background: white;
+  width: 100%;
+  height: fit-content;
+}
+
+.receiptHeading {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 2rem;
+}
+
+.receiptHeadingInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.receiptHeadingInfo h1{
+  font-weight: 100;
+  text-align: center;
+  font-size: larger;
+}
+
+.receiptTitle {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.receiptTitle h2 {
+  font-weight: 100;
+  font-size: medium;
+}
+
+.receiptInfo  {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.receiptBody table {
+  width: 100%;
+  padding: 10px 2rem;
+}
+
+.receiptBody table thead th{
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  color: white;
+}
+
+.receiptBody table tbody {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.receiptBody table tbody td {
+  padding: 1rem;
+  text-align: center;
+}

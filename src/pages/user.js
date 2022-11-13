@@ -73,7 +73,7 @@ function User() {
                     <Route path='/profile' element={<Profile/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='/appointment' element={<Appointment/>}/>
-                    <Route path='/notifications' element={<Notifications/>}/>                  
+                    <Route path='/notifications' element={<Notifications/>}/>   
                 </Routes>
             </div>
         </>
